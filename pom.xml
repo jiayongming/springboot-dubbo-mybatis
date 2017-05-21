@@ -9,7 +9,7 @@
 
     <properties>
         <!--  MyBatis Generator  -->
-        <!--  Java接口和实体类  -->
+        <!--  Java接口和实体类哈哈  -->
         <targetJavaProject>${basedir}/src/main/java</targetJavaProject>
         <targetMapperPackage>com.spring.mybatis.mapper</targetMapperPackage>
         <targetModelPackage>com.spring.mybatis.model</targetModelPackage>
