@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>spring.mybatis</groupId>
-    <artifactId>spring-mybatis-demo</artifactId>
+    <artifactId>springboot-dubbo-mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-mybatis-demo</name>
-    <description>spring-mybatis-demo</description>
+    <name>springboot-dubbo-mybatis</name>
+    <description>springboot-dubbo-mybatis</description>
 
     <properties>
         <!--  MyBatis Generator  -->
