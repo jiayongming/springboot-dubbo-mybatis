@@ -53,6 +53,10 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>xerces</groupId>
@@ -64,12 +68,6 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.6</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
-			<version>3.2.1</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
@@ -144,7 +142,6 @@
 				<configuration>
 					<descriptors>
 						<descriptor>src/main/assembly/assembly.xml</descriptor> <!-- 自定义打包的配置文件 -->
-						<descriptor>src/main/assembly/kailin.xml</descriptor>
 					</descriptors>
 					<appendAssemblyId>true</appendAssemblyId> <!-- 设为 FALSE, 防止 WAR 包名加入 assembly.xml 中的 ID -->
 				</configuration>
