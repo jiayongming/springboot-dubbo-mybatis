@@ -72,12 +72,12 @@
             <AppenderRef ref="Console" />
         </logger>
 
-        <logger name="com.gemantic.wealth.application.server" level="debug" additivity="false">
+        <logger name="com.ymjia.demo.application.server" level="debug" additivity="false">
             <AppenderRef ref="running-log"/>
             <AppenderRef ref="Console" />
         </logger>
 
-        <logger name="com.gemantic.wealth.application.service.impl" level="debug" additivity="false">
+        <logger name="com.ymjia.demo.application.service.impl" level="debug" additivity="false">
             <AppenderRef ref="running-log"/>
             <AppenderRef ref="Console" />
         </logger>
@@ -92,7 +92,7 @@
             <AppenderRef ref="Console" />
         </logger>
 
-        <logger name="com.gemantic.wealth.application.mapper" level="debug" additivity="false">
+        <logger name="com.ymjia.demo.application.mapper" level="debug" additivity="false">
             <AppenderRef ref="sql-log"/>
             <AppenderRef ref="Console" />
         </logger>

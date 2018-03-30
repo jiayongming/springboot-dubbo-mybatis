@@ -109,7 +109,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.gemantic.wealth.application.server.Server</mainClass>
+							<mainClass>com.ymjia.demo.application.server.Server</mainClass>
 							<classpathPrefix>../lib/</classpathPrefix>
 						</manifest>
 					</archive>
@@ -117,7 +117,6 @@
 						<exclude>src/main/resources/**</exclude>
 						<exclude>**/*.properties</exclude>
 						<exclude>**/*.xml</exclude>
-						<exclude>**/*.composite</exclude>
 					</excludes>
 
 				</configuration>
