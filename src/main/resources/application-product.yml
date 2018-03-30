@@ -1,3 +1,4 @@
+logging.config: classpath:log4j2.xml
 # jdbc-DruidDataSource\u8FDE\u63A5\u6C60\u914D\u7F6E
 application.datasource:
   url: jdbc:mysql://db.wealth.channel:3306/channels?defaultBatchValue=1000&amp;useUnicode=true&amp;characterEncoding=utf8mb4&amp;useSSL=false&amp;autoReconnect=true

@@ -1,4 +1,4 @@
-logging.config: classpath:log4j2.xml
+logging.config: classpath:log4j2-test.xml
 
 ## Dubbo \u670D\u52A1\u63D0\u4F9B\u8005\u914D\u7F6E
 spring.dubbo:

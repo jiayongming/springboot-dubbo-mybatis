@@ -64,31 +64,37 @@
     <loggers>
         <root level="info">
             <AppenderRef ref="system-log"/>
+            <AppenderRef ref="Console" />
         </root>
 
         <logger name="com.alibaba.dubbo.common.logger.LoggerFactory" level="debug" additivity="false">
             <AppenderRef ref="running-log" />
+            <AppenderRef ref="Console" />
         </logger>
 
         <logger name="com.gemantic.wealth.application.server" level="debug" additivity="false">
             <AppenderRef ref="running-log"/>
+            <AppenderRef ref="Console" />
         </logger>
 
         <logger name="com.gemantic.wealth.application.service.impl" level="debug" additivity="false">
             <AppenderRef ref="running-log"/>
-
+            <AppenderRef ref="Console" />
         </logger>
 
         <logger name="sql" level="debug" additivity="false">
             <AppenderRef ref="sql-log"/>
+            <AppenderRef ref="Console" />
         </logger>
 
         <logger name="time-statistic" level="debug" additivity="false">
             <AppenderRef ref="time-log"/>
+            <AppenderRef ref="Console" />
         </logger>
 
         <logger name="com.gemantic.wealth.application.mapper" level="debug" additivity="false">
             <AppenderRef ref="sql-log"/>
+            <AppenderRef ref="Console" />
         </logger>
 
 
