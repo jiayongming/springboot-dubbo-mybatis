@@ -1,4 +1,4 @@
-# wealth-channel-service
+# springboot-dubbo-mybatis
 
 # 代码发布方法
 ## 开始发布

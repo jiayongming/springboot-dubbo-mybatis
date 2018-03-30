@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="generator.properties"></properties>
+
+    <classPathEntry location="${jdbc.driverLocation}"/>
+
+    <context id="mysql" defaultModelType="flat" targetRuntime="MyBatis3">
+
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+
+        <jdbcConnection driverClass="${jdbc.driverClassName}" connectionURL="${jdbc.url}" userId="${jdbc.username}" password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="${model.targetPackage}" targetProject="src/main/java">
+            <property name="constructorBased" value="false"/>
+            <property name="enableSubPackages" value="false"/>
+            <property name="immutable" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+
+        <javaClientGenerator targetPackage="${dao.targetPackage}" targetProject="src/main/java" type="${dao.type}">
+            <property name="enableSubPackages" value=""/>
+            <property name="exampleMethodVisibility" value="false"/>
+            <property name="methodNameCalculator" value=""/>
+
+            <property name="rootInterface" value=""/>
+
+        </javaClientGenerator>
+
+
+
+        <table tableName="${table.name}" schema="wealth_channels" enableUpdateByExample="true">
+        </table>
+    </context>
+</generatorConfiguration>
